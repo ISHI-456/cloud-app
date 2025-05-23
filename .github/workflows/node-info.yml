@@ -1,0 +1,21 @@
+name : Print node info
+
+on:
+  push:
+    branches: [develop]
+
+
+jobs:
+  node-info:
+    runs-on: ubunto-latest
+
+
+    steps:
+      - name: checkout repository code
+        uses: actions/checkout@v3
+
+      - name : Print Node.js version
+        run: node -v || echo "Node is not installed yet"
+
+      - name : List projects  files
+        run: ls -la
