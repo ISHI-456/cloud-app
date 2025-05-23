@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Print Greeting
-      run: echo "Hello , from github actions"
+      - name: Print Greeting
+        run: echo "Hello , from github actions"
